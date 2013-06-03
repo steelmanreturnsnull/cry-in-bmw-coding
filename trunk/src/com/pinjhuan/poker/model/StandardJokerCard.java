@@ -1,4 +1,4 @@
-package com.pinjhuan.poker;
+package com.pinjhuan.poker.model;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,5 +1,6 @@
-package com.pinjhuan.poker;
+package com.pinjhuan.poker.model;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -9,6 +10,11 @@ public class Decks <T extends Card>
 
 	public List<T> getCards() {
 		return m_cards;
+	}
+	
+	
+	public void setCards(List<T> cards) {
+		m_cards = cards;
 	}
 
 	public Decks (List<T> cards) {
@@ -29,6 +35,7 @@ public class Decks <T extends Card>
 		}
 		System.out.println();
 	}
+	
 	
 	public void shuffle()
 	{
