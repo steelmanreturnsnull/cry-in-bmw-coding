@@ -1,4 +1,4 @@
-package com.pinjhuan.poker;
+package com.pinjhuan.poker.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,8 +29,9 @@ public class Tester {
 		
 		Game game = new Game(ps, deck);
 		game.printGame();
-		game.dealUnreservedCards(8);
+		game.dealUnreservedCards();
 		game.printGame();
+		
 
 	}
 
