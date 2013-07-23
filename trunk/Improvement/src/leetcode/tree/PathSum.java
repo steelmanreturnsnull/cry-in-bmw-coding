@@ -32,4 +32,9 @@ public class PathSum {
     		return (root.val == sum);
     	return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
     }
+    
+    public boolean hasPathSumIter(TreeNode root, int sum)
+    {
+    	
+    }
 }
