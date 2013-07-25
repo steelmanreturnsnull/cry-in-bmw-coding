@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import common.TreeNode;
 import common.TreeUtil;
 
-/* Note: 
+/** Note: 
  * Preorder: visit the node the 1st time
  * Inorder: visit the node the 2nd time
  * Postorder: visit the node the 3rd time
