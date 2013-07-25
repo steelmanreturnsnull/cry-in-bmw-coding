@@ -19,6 +19,7 @@ import common.TreeNode;
  * 
  */
 public class PathSum {
+	
 	private boolean isLeaf(TreeNode root)
 	{
 		return (root != null && root.left==null && root.right==null);
@@ -31,10 +32,5 @@ public class PathSum {
     	if (isLeaf(root))
     		return (root.val == sum);
     	return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
-    }
-    
-    public boolean hasPathSumIter(TreeNode root, int sum)
-    {
-    	
     }
 }
