@@ -53,7 +53,7 @@ public class SolvedBinaryTreeLevelOrderTraversal {
         return result;
     }
     
-    // Without using second queue
+    // Without using second queue (This is much better!)
     public static ArrayList<ArrayList<Integer>> levelOrder2(TreeNode root) {
     	ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>> ();
     	LinkedList<TreeNode> currentQueue = new LinkedList<TreeNode> ();

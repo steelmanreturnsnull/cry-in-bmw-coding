@@ -1,25 +1,27 @@
 package testing;
-
-import java.util.ArrayList;
-
-public class JavaTest3 {
-	
-	static int size = 1000000000;
-	
-	public static void test()
+public class JavaTest3 extends Thread
+{		
+	private int start;
+	private int end;
+	private double result;
+	public JavaTest3 (int start, int end) 
 	{
-		
-		ArrayList<Integer> list = new ArrayList<Integer> ();
-		list.add(1);
-		list.add(2);
-		for(@SuppressWarnings("unused") Integer i: list)
-		{
-			list.add(3);
-		}
+		this.start = start;
+		this.end = end;
+		result = 0;
 	}
 	
-    public static void main(String[] args) 
-    
-    {
-    }
+	public double getResult()
+	{
+		return result;
+	}
+	
+	@Override
+	public void run() 
+	{
+		for (int i = start; i < end; i++)
+		{
+			result += Math.sqrt(i);
+		}
+	}
 }
