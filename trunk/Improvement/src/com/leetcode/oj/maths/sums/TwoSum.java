@@ -1,8 +1,10 @@
-package leetcode;
+package com.leetcode.oj.maths.sums;
 
 import java.util.HashMap;
 
-/*
+import com.leetcode.oj.util.PrintUtil;
+
+/**
  * Given an array of integers, find two numbers such that they add up to a specific target number.
  * 
  * The function twoSum should return indices of the two numbers such that they add up to the target, 
@@ -15,20 +17,29 @@ import java.util.HashMap;
  * 
 */
 
-
-public class TwoSum { // O(n)
-    public int[] twoSum(int[] numbers, int target) { 
+// OK
+public class TwoSum 
+{ 
+	// O(N)
+    public static int[] twoSum(int[] numbers, int target) 
+    { 
     	HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
     	int[] result = new int[2];
-    	for (int i=0; i<numbers.length; i++) {
+    	for (int i = 0; i < numbers.length; i++) {
     		if (map.containsKey(target - numbers[i])) {
-    			result[0] = map.get(target - numbers[i])+1;
-    			result[1] = i+1;
+    			result[0] = map.get(target - numbers[i]) + 1;
+    			result[1] = i + 1;
     		}
     		else {
     			map.put(numbers[i], i);
     		}
     	}
     	return result;
+    }
+    
+    public static void main(String[] args)
+    {
+    	int a[] = new int[] {4, 22, 2, 4, 15};
+    	PrintUtil.print(twoSum(a, 8));
     }
 }
