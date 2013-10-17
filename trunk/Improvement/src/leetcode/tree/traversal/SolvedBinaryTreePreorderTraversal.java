@@ -3,8 +3,9 @@ package leetcode.tree.traversal;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-import common.TreeNode;
-import common.TreeUtil;
+import com.leetcode.oj.common.TreeNode;
+import com.leetcode.oj.common.TreeUtil;
+
 
 public class SolvedBinaryTreePreorderTraversal {
 	public static ArrayList<Integer> preorderTraversal2(TreeNode root) 
@@ -52,7 +53,7 @@ public class SolvedBinaryTreePreorderTraversal {
 	{
 		for (int i=0; i<=10; i++)
 		{
-			TreeNode test = TreeUtil.contructFullTestTree(i);
+			TreeNode test = TreeUtil.constructFullTreeNode(i);
 			ArrayList<Integer> l1 = preorderTraversal2(test);
 			ArrayList<Integer> l2 = preorderTraversalIter(test);
 			System.out.println("i = " + i + ":" + l1.equals(l2));

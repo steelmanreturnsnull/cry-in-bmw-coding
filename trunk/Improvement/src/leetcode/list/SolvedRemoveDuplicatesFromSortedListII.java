@@ -1,6 +1,6 @@
 package leetcode.list;
 
-import common.ListNode;
+import com.leetcode.oj.common.ListNode;
 
 /**
  * Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list.

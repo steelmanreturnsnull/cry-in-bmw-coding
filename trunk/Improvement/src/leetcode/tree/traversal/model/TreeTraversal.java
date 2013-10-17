@@ -2,7 +2,8 @@ package leetcode.tree.traversal.model;
 
 import java.util.LinkedList;
 
-import common.TreeNode;
+import com.leetcode.oj.common.TreeNode;
+
 
 public class TreeTraversal {
 

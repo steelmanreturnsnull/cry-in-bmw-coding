@@ -3,7 +3,8 @@ package leetcode;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import common.TreeNode;
+import com.leetcode.oj.common.TreeNode;
+
 
 public class MinimumDepthOfBinaryTree {
 	

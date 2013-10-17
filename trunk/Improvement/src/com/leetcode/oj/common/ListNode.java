@@ -1,10 +1,12 @@
-package common;
+package com.leetcode.oj.common;
 
 //Definition for singly-linked list.
-public class ListNode {
+public class ListNode 
+{
     public int val;
     public ListNode next;
-    public ListNode(int x) {
+    public ListNode(int x) 
+    {
         val = x;
         next = null;
     }

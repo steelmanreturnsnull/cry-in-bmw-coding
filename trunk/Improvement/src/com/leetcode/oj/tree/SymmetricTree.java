@@ -1,10 +1,11 @@
-package leetcode.tree;
+package com.leetcode.oj.tree;
 
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Set;
 
-import common.TreeNode;
+import com.leetcode.oj.common.TreeNode;
+import com.leetcode.oj.common.TreeUtil;
 
 /**
  * Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
@@ -30,7 +31,11 @@ import common.TreeNode;
  * Note:
  * Bonus points if you could solve it both recursively and iteratively.
  */
-public class SymmetricTree {
+
+// OK
+public class SymmetricTree 
+{
+	// O(N)
     public boolean isSymmetric(TreeNode root) 
     {
     	if (root == null) return true;
@@ -45,11 +50,12 @@ public class SymmetricTree {
     	return isSymmetric(left.left, right.right) && isSymmetric(left.right, right.left);
     }
     
-    public boolean isSymmetricIter(TreeNode root) 
+    // Use two iterators, do symmetric iteration, result must be same
+    public static boolean isSymmetricIter(TreeNode root) 
     {
     	if (root == null) return true;
     	if (root.left == null && root.right ==null) return true;
-    	if (root.left == null || root.left == null || root.left.val != root.right.val) return false;
+    	if (root.left == null || root.right == null || root.left.val != root.right.val) return false;
     	LinkedList<TreeNode> leftStack = new LinkedList<TreeNode> ();
     	LinkedList<TreeNode> rightStack = new LinkedList<TreeNode> ();
     	
@@ -80,5 +86,10 @@ public class SymmetricTree {
     	if (leftStack.isEmpty() && rightStack.isEmpty())
     		return true;
     	return false;
+    }
+    
+    public static void main (String[] args)
+    {
+    	System.out.println(isSymmetricIter(TreeUtil.constructTreeNode("{1,2,2}")));
     }
 }

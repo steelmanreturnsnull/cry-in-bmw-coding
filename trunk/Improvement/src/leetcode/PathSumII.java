@@ -3,7 +3,8 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.Stack;
 
-import common.TreeNode;
+import com.leetcode.oj.common.TreeNode;
+
 
 public class PathSumII {
 	
