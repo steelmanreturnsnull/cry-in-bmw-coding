@@ -1,4 +1,4 @@
-package com.leetcode.oj.maths.sums;
+package com.leetcode.oj.numbers.sums;
 
 import java.util.HashMap;
 

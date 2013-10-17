@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 
-import common.TreeNode;
-import common.TreeUtil;
+import com.leetcode.oj.common.TreeNode;
+import com.leetcode.oj.common.TreeUtil;
+
 
 /**
  * Given a binary tree, return the bottom-up level order 
@@ -76,7 +77,7 @@ public class SolvedBinaryTreeLevelOrderTraversalII {
 	{
 		for (int i=0; i<=3; i++)
 		{
-			TreeNode test = TreeUtil.contructFullTestTree(i);
+			TreeNode test = TreeUtil.constructFullTreeNode(i);
 			levelOrderBottom(test);
 			System.out.println();
 		}

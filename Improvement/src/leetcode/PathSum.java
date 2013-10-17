@@ -2,7 +2,8 @@ package leetcode;
 
 import java.util.Stack;
 
-import common.TreeNode;
+import com.leetcode.oj.common.TreeNode;
+
 
 
 

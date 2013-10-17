@@ -3,8 +3,9 @@ package leetcode.tree.traversal;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-import common.TreeNode;
-import common.TreeUtil;
+import com.leetcode.oj.common.TreeNode;
+import com.leetcode.oj.common.TreeUtil;
+
 
 /**
  * Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
@@ -123,7 +124,7 @@ public class SolvedBinaryTreeLevelOrderTraversal {
 	{
 		for (int i=0; i<=3; i++)
 		{
-			TreeNode test = TreeUtil.contructFullTestTree(i);
+			TreeNode test = TreeUtil.constructFullTreeNode(i);
 			levelOrder3(test);
 			System.out.println();
 		}

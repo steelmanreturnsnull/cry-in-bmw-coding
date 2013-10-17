@@ -1,6 +1,6 @@
 package leetcode.tree.traversal.model;
 
-import common.TreeNode;
+import com.leetcode.oj.common.TreeNode;
 
 public interface Traversable<T> {
 	
