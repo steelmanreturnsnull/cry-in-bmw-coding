@@ -3,7 +3,7 @@ package com.leetcode.oj.maths.combinations;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import com.leetcode.oj.util.PrintUtil;
+import com.leetcode.oj.common.PrintUtil;
 
 /**
  * Given a set of distinct integers, S, return all possible subsets.

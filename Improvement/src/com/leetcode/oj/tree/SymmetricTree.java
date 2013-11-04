@@ -1,11 +1,9 @@
 package com.leetcode.oj.tree;
 
-import java.util.HashSet;
 import java.util.LinkedList;
-import java.util.Set;
 
-import com.leetcode.oj.common.TreeNode;
 import com.leetcode.oj.common.TreeUtil;
+import com.leetcode.oj.common.model.TreeNode;
 
 /**
  * Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
@@ -36,13 +34,13 @@ import com.leetcode.oj.common.TreeUtil;
 public class SymmetricTree 
 {
 	// O(N)
-    public boolean isSymmetric(TreeNode root) 
+    public static boolean isSymmetric(TreeNode root) 
     {
     	if (root == null) return true;
     	return isSymmetric(root.left, root.right);
     }
     
-    public boolean isSymmetric(TreeNode left, TreeNode right)
+    public static boolean isSymmetric(TreeNode left, TreeNode right)
     {
     	if (left == null && right == null) return true;
     	if (left == null || right == null) return false;
@@ -54,34 +52,23 @@ public class SymmetricTree
     public static boolean isSymmetricIter(TreeNode root) 
     {
     	if (root == null) return true;
-    	if (root.left == null && root.right ==null) return true;
-    	if (root.left == null || root.right == null || root.left.val != root.right.val) return false;
     	LinkedList<TreeNode> leftStack = new LinkedList<TreeNode> ();
     	LinkedList<TreeNode> rightStack = new LinkedList<TreeNode> ();
     	
-    	Set<TreeNode> visited = new HashSet<TreeNode> ();
     	leftStack.push(root.left);
     	rightStack.push(root.right);
-    	visited.add(root.left);
-    	visited.add(root.right);
     	while (!leftStack.isEmpty() && !rightStack.isEmpty())
     	{
-    		TreeNode iterLeft = leftStack.peek();
-    		TreeNode iterRight = rightStack.peek();
-    		if (iterLeft.val != iterRight.val) return false;
-    		if (iterLeft.left != null && !visited.contains(iterLeft.left))
-    			leftStack.add(iterLeft.left);
-    		else if (iterLeft.right != null && !visited.contains(iterLeft.right))
-    			leftStack.add(iterLeft.right);
-    		else
-    			rightStack.pop();
-    		if (iterRight.right != null && !visited.contains(iterRight.right))
-    			rightStack.add(iterRight.right);
-    		else if (iterRight.left != null && !visited.contains(iterRight.left))
-    			rightStack.add(iterRight.left);
-    		else
-    			rightStack.pop();
+    		TreeNode iterLeft = leftStack.pop();
+    		TreeNode iterRight = rightStack.pop();
     		
+        	if (iterLeft == null && iterRight == null) continue;
+        	if (iterLeft == null || iterRight == null || iterLeft.val != iterRight.val) return false;
+    		
+    		leftStack.add(iterLeft.left);
+    		leftStack.add(iterLeft.right);
+    		rightStack.add(iterRight.right);
+    		rightStack.add(iterRight.left);    		
     	}
     	if (leftStack.isEmpty() && rightStack.isEmpty())
     		return true;
@@ -90,6 +77,10 @@ public class SymmetricTree
     
     public static void main (String[] args)
     {
-    	System.out.println(isSymmetricIter(TreeUtil.constructTreeNode("{1,2,2}")));
+    	for (int i = 0; i < 10; i++)
+    	{
+    		System.out.print(isSymmetricIter(TreeUtil.getCommonTrees(i)));
+    		System.out.println(isSymmetric(TreeUtil.getCommonTrees(i)));
+    	}
     }
 }

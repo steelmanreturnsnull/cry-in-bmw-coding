@@ -1,6 +1,6 @@
 package com.leetcode.oj.others;
 
-import com.leetcode.oj.util.MathUtil;
+import com.leetcode.oj.common.MathUtil;
 
 /**
  * You are climbing a stair case. It takes n steps to reach to the top.
