@@ -2,7 +2,7 @@ package com.leetcode.oj.maths.combinations;
 
 import java.util.ArrayList;
 
-import com.leetcode.oj.util.PrintUtil;
+import com.leetcode.oj.common.PrintUtil;
 
 /**
  * Given a collection of numbers, return all possible permutations.

@@ -2,6 +2,7 @@ package com.leetcode.oj.common;
 
 import java.util.LinkedList;
 
+import com.leetcode.oj.common.model.TreeNode;
 
 /**
  * The serialization of a binary tree follows a level order traversal, 
@@ -80,7 +81,7 @@ public class TreeUtil
 	{
 		StringBuilder sb = new StringBuilder();
 		sb.append("{");
-		for (int i = 0; i < Math.pow(2, level) -1; i++)
+		for (int i = 1; i <= Math.pow(2, level) -1; i++)
 		{
 			sb.append(i).append(",");
 		}
@@ -108,9 +109,9 @@ public class TreeUtil
 			case 4:
 				return constructTreeNode("{1,#,2}");
 			case 5:
-				return constructTreeNode("{1,2,3}");
+				return constructTreeNode("{0,1,1}");
 			case 6:
-				return constructTreeNode("{1,2,3,4,5}");
+				return constructTreeNode("{1,#,3,#,5}");
 			case 7:
 				return constructTreeNode("{1,2,3,4,#,#,5}");
 			case 8:

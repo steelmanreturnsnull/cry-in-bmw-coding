@@ -1,6 +1,6 @@
 package com.leetcode.oj.maths.combinations;
 
-import com.leetcode.oj.util.ArraysUtil;
+import com.leetcode.oj.common.ArraysUtil;
 
 /**
  * Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.

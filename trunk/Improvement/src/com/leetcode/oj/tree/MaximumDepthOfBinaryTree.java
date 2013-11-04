@@ -3,8 +3,8 @@ package com.leetcode.oj.tree;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import com.leetcode.oj.common.TreeNode;
 import com.leetcode.oj.common.TreeUtil;
+import com.leetcode.oj.common.model.TreeNode;
 
 /**
  * Given a binary tree, find its maximum depth.
@@ -95,11 +95,11 @@ public class MaximumDepthOfBinaryTree
 		return (root !=null && root.left ==null && root.right ==null);
 	}
     
-    public static int maxDepth_rec(TreeNode root) 
+    public static int maxDepthRec(TreeNode root) 
     {
     	if (root == null)
     		return 0;
-    	return Math.max(maxDepth(root.left) + 1, maxDepth(root.right) + 1);
+    	return Math.max(maxDepthRec(root.left) + 1, maxDepthRec(root.right) + 1);
     }
     
     public static void main (String[] args)

@@ -2,7 +2,7 @@ package com.leetcode.oj.maths.combinations;
 
 import java.util.ArrayList;
 
-import com.leetcode.oj.util.PrintUtil;
+import com.leetcode.oj.common.PrintUtil;
 
 /**
  * Given two integers n and k, return all possible combinations of k numbers out of 1 ... n.

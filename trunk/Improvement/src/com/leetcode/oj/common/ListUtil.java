@@ -1,7 +1,7 @@
 package com.leetcode.oj.common;
 
+import com.leetcode.oj.common.model.ListNode;
 
-// OK
 public class ListUtil 
 {
 	private static String[] split (String s)
@@ -30,7 +30,7 @@ public class ListUtil
 		return root;
 	}
 	
-	public static ListNode getCommonTrees (int id)
+	public static ListNode getCommonLists (int id)
 	{
 		switch (id)
 		{
@@ -43,7 +43,7 @@ public class ListUtil
 			case 3:
 				return constructListNode("{1,2,3}");
 			case 4:
-				return constructListNode("{1,2,3,4}");
+				return constructListNode("{1,2,3,4,5,6}");
 			case 5:
 				return constructListNode("{1,2,3,3,4,4,5}");
 			case 6:
@@ -64,7 +64,7 @@ public class ListUtil
 	{
 		for (int i = 0; i < 10; i++)
 		{
-			ListNode a = getCommonTrees(i);
+			ListNode a = getCommonLists(i);
 		}
 	}
 }

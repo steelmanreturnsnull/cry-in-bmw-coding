@@ -3,7 +3,7 @@ package com.leetcode.oj.maths.combinations;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import com.leetcode.oj.util.PrintUtil;
+import com.leetcode.oj.common.PrintUtil;
 
 /**
  * Given a collection of numbers that might contain duplicates, return all possible unique permutations.
