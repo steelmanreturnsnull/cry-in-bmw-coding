@@ -48,5 +48,4 @@ public class RotateListII
 	{
 		PrintUtil.print(rotateLeft(ListUtil.getCommonLists(4), 2));
 	}
-
 }
