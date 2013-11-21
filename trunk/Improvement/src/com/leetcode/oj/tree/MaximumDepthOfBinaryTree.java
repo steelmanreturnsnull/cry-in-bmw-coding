@@ -12,8 +12,6 @@ import com.leetcode.oj.common.model.TreeNode;
  * The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
  */
 
-// Mistake: Can't use in-order, as root is visited before right child
-
 // OK
 public class MaximumDepthOfBinaryTree 
 {

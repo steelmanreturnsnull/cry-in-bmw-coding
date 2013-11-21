@@ -8,7 +8,7 @@ import com.leetcode.oj.common.model.ListNode;
  * 
  */
 
-// OK OK
+// OK
 public class MergeTwoSortedLists 
 {
 	// O(m+n)

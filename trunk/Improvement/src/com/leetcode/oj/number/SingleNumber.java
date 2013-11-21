@@ -9,14 +9,14 @@ package com.leetcode.oj.number;
  *
  */
 
-//OK
+// OK
 public class SingleNumber 
 {
 	// O(N)
     public static int singleNumber(int[] A) 
     {
     	int result = 0;
-    	for (int a: A)
+    	for (int a : A)
     	{
     		result ^= a;
     	}
