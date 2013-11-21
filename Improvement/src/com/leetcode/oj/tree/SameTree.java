@@ -26,7 +26,7 @@ public class SameTree
         return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
     }
     
-    // Mistakes the three if statements must have else
+    // Mistakes: the three if statements must have else
     public static boolean isSameTreeIter(TreeNode p, TreeNode q)
     {
     	LinkedList<TreeNode> stackP = new LinkedList<TreeNode>();

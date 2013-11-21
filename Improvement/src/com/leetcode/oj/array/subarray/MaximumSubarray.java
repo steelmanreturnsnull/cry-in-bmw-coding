@@ -1,4 +1,4 @@
-package com.leetcode.oj.array.subarray.sum;
+package com.leetcode.oj.array.subarray;
 
 /**
  * Find the contiguous subarray within an array (containing at least one number) which has the largest sum.
@@ -13,6 +13,7 @@ package com.leetcode.oj.array.subarray.sum;
  * which is more subtle. *
  */
 
+// OK
 public class MaximumSubarray 
 {
 	// O(N)

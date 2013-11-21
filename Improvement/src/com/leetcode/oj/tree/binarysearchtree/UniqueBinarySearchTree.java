@@ -14,13 +14,10 @@ package com.leetcode.oj.tree.binarysearchtree;
  *
  */
 
-// Thoughts: C0 = 1, C1 = 1, C2 = C1 + C1 (以1为root和以2为root)
-
-// Mistakes: new int[n+1]
-
 // OK
 public class UniqueBinarySearchTree 
 {
+	// Thoughts: C0 = 1, C1 = 1, C2 = C1 + C1 (以1为root和以2为root)
 	// O(N)
     public static int numTrees(int n) 
     {
@@ -36,6 +33,8 @@ public class UniqueBinarySearchTree
     	}
     	return C[n];
     }
+    
+    // Mistakes: new int[n+1]
     
     public static void main(String[] args)
     {

@@ -14,7 +14,7 @@ import com.leetcode.oj.common.model.ListNode;
  * 
  */
 
-// OK OK
+// OK
 public class ReverseLinkedList 
 {
 	// O(N)

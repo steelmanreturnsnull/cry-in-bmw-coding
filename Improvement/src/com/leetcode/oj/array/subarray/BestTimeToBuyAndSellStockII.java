@@ -1,4 +1,4 @@
-package com.leetcode.oj.array.subarray.sum;
+package com.leetcode.oj.array.subarray;
 
 /**
  * Say you have an array for which the ith element is the price of a given stock on day i.
@@ -28,7 +28,8 @@ public class BestTimeToBuyAndSellStockII
         return max_profit;
     }
 	
-/*	public int maxProfit(int[] prices) 
+/*	
+ * public int maxProfit(int[] prices) 
 	{
 		int max_profit = 0;
 		int local_min_index = -1;
@@ -56,5 +57,6 @@ public class BestTimeToBuyAndSellStockII
 		if (local_max_index != -1)
 			max_profit += prices[local_max_index] - prices[local_min_index];
 		return max_profit;
-    }*/
+    }
+ */
 }

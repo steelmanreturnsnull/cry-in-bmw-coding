@@ -11,7 +11,7 @@ import com.leetcode.oj.common.model.ListNode;
  * Analyze and describe its complexity.
  */
 
-// OK OK
+// OK
 public class MergeKSortedLists 
 {
 	// Improvement: use a PQ

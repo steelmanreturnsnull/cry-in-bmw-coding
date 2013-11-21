@@ -30,7 +30,7 @@ public class ReverseInteger
 		int rec = 0;
 		while (x!=0)
 		{	
-			rec = rec *10 + x % 10;
+			rec = rec * 10 + x % 10;
 			x = x / 10;
 		}
 		return rec;
